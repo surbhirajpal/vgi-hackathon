@@ -1,0 +1,33 @@
+@import './variables.scss';
+
+body{
+    margin: 0;
+}
+
+.container{
+    padding: 60px;
+}
+
+.ant-layout-content{
+    background-color: #fff;
+}
+
+.title{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+
+.subtitle{
+    font-size: 24px;
+}
+
+.small-grey{
+    font-size: 14px;
+    color: $eoa-grey;
+}
+
+.section{
+    margin-bottom: 50px;
+}
