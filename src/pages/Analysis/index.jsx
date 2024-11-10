@@ -1,7 +1,7 @@
 const Analysis = () => {
     return(
         <div className='container'>
-            {'Analysis'}
+            <iframe src='https://html-heatmap.vercel.app/'/>
         </div>
     );
 };

@@ -1,0 +1,46 @@
+@import '../../styles/variables.scss';
+
+.dashboard{
+
+    &-cards{
+        margin-top: 20px;
+
+        .ant-card{
+            height: 100%;
+        }
+
+        .ant-card-head{
+            background-color: #dbeefa;
+        }
+
+        &__detail{
+            display: flex;
+            align-items: baseline;
+        }
+
+        &__count{
+            font-size: 24px;
+            flex-grow: 1;
+            margin: 0;
+        }
+
+        &__percentage{
+            text-align: right;
+            display: flex;
+
+            p{
+                margin: 0;
+            }
+        }
+
+        &__increased{
+            color: $dark-green;
+            font-size: 20px;
+        }
+
+        &__decreased{
+            color: red;
+            font-size: 20px;
+        }
+    }
+}
