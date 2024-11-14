@@ -3,6 +3,10 @@ import { useState, useEffect } from "react";
 import Papa from "papaparse";
 import { CaretUpFilled, CaretDownFilled } from "@ant-design/icons";
 
+import Section1 from "./Section1";
+import Section2 from "./Section2";
+import Section3 from "./Section3";
+
 import ConfigProvider from "../../components/ConfigProvider";
 import "./Dashboard.scss";
 
@@ -127,17 +131,19 @@ const Dashboard = () => {
 
   return (
     <div className="container dashboard">
-      <p className="title">{"Dashboard"}</p>
-      <ConfigProvider>
-        <Radio.Group
-          options={options}
-          onChange={onOptionChange}
-          defaultValue={optionValue}
-          optionType="button"
-          buttonStyle="solid"
-        />
-
-        <div className="dashboard-cards">
+      <div className="flex heading">
+        <p className="title">{"Dashboard"}</p>
+        <ConfigProvider>
+          <Radio.Group
+            options={options}
+            onChange={onOptionChange}
+            defaultValue={optionValue}
+            optionType="button"
+            buttonStyle="solid"
+          />
+        </ConfigProvider>
+      </div>
+      {/* <div className="dashboard-cards">
           <Row gutter={16}>
             <Col span={8}>
               <Card title={"Total Bookings"} bordered={true}>
@@ -175,8 +181,13 @@ const Dashboard = () => {
               </Card>
             </Col>
           </Row>
-        </div>
-      </ConfigProvider>
+        </div> */}
+
+      <div className="dashboard-cards">
+        <Section1 />
+        <Section2 />
+        <Section3 />
+      </div>
     </div>
   );
 };

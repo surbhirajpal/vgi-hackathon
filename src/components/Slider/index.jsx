@@ -1,3 +1,4 @@
+import {useState} from 'react';
 import { Layout, Menu } from "antd";
 import { Link, useLocation } from "react-router-dom";
 
@@ -10,10 +11,12 @@ const { Sider } = Layout;
 const CustomSlider = () => {
   const location = useLocation();
 
+  const [collapsed, setCollapsed] = useState(false);
+
   const selectedKey = location.pathname;
 
   return (
-    <Sider width={300} className="slider">
+    <Sider collapsible collapsed={collapsed} width={300} className="slider" onCollapse={(value) => setCollapsed(value)}>
       <div className="slider-section">
         {/* <div className="slider-user">
           <div className="slider-user__profile">
@@ -35,7 +38,7 @@ const CustomSlider = () => {
           {SliderMenuData.map((item) => {
             return (
               <Menu.Item key={item.path} icon={item.icon} className='slider-menu__item'>
-                <Link to={item.path}>{item.title}</Link>
+                <Link to={item.path}>{collapsed ? '' : item.title}</Link>
               </Menu.Item>
             );
           })}
