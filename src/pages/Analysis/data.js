@@ -13,7 +13,7 @@ export const ListData = [
         }
     },
     {
-        name: 'Hirschberg',
+        name: 'Beilngries',
         trips: '220',
         stopTime: '6 mins',
         delayTime: '5 mins',
@@ -109,7 +109,7 @@ export const ListDataPrediction = [
         }
     },
     {
-        name: 'Hirschberg',
+        name: 'Beilngries',
         trips: '235',
         stopTime: '7 mins',
         delayTime: '6 mins',

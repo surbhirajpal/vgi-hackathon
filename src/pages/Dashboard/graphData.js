@@ -147,7 +147,7 @@ export const graph1Options = {
     y: {
       title: {
         display: true,
-        text: "Number of Buses on the Road",
+        text: "Number of Vehicles on the Road",
       },
       beginAtZero: true,
     },

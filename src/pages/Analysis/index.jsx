@@ -211,7 +211,15 @@ const Analysis = () => {
             />
           </Col>
           <Col span={12}>
-            <iframe src="https://html-heatmap.vercel.app/" />
+            <iframe
+              src={
+                activeKey && activeKey[0] === "1"
+                  ? "https://html-heatmap.vercel.app/kinding.html"
+                  : activeKey && activeKey[0] === "2"
+                  ? "https://html-heatmap.vercel.app/beilngries.html"
+                  : "https://html-heatmap.vercel.app/"
+              }
+            />
           </Col>
         </Row>
       </div>

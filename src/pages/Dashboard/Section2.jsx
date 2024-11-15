@@ -2,11 +2,11 @@ import { Row, Col, List, Card } from "antd";
 
 const Section2 = () => {
   const data = [
-    "Bus Stop 1",
-    "Bus Stop 2",
-    "Bus Stop 3",
-    "Bus Stop 4",
-    "Bus Stop 5",
+    "Kinding, Bahnhof",
+    "Beilngries, Ringstrasse",
+    "Beilngries, Frauenkirche",
+    "Beilngries, Deutscher Hof",
+    "⁠⁠Beilngries, Einstaetter",
   ];
 
   return (
