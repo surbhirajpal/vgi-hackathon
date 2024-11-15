@@ -53,6 +53,13 @@
       }
     }
 
+    &.ant-menu-inline-collapsed{
+      .ant-menu-item{
+        padding: 0;
+        text-align: center;
+      }
+    }
+
     &__item {
       .anticon {
         font-size: 20px !important;

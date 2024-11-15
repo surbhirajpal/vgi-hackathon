@@ -127,13 +127,14 @@ export const graph1Data = {
 
 export const graph1Options = {
   responsive: true,
+  maintainAspectRatio: false, // Ensure it takes up all the available height
   plugins: {
     legend: {
       position: "top",
     },
     title: {
       display: true,
-      text: "VGI-Flexi Bus Availability Throughout the Day",
+      text: "Traffic Information",
     },
   },
   scales: {

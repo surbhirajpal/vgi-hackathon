@@ -62,7 +62,7 @@
   }
 
   .section2 {
-    margin-top: 40px;
+    margin-top: 20px;
   }
 
   .no-gradient{
@@ -76,6 +76,10 @@
     background: linear-gradient(to right, #AB31FF, #08A3FC);
     background-clip: border-box;
     padding: 7px;
+
+    .list-heading{
+      background: linear-gradient(to right, #AB31FF, #08A3FC);
+    }
   }
 
   .content {

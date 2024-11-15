@@ -154,6 +154,7 @@ const Analysis = () => {
     }
   }, [predictionTrue]);
 
+  console.log("activeKey", activeKey);
   return (
     // <div className='container'>
     // </div>
@@ -215,60 +216,62 @@ const Analysis = () => {
         </Row>
       </div>
 
-      <div className="section2">
-        <Row justify={"space-between"}>
-          <Col span={7}>
-            <div style={{ position: "relative", height: "300px" }}>
-              <Bar
-                data={
-                  activeKey && activeKey[0] === "1"
-                    ? graph1Data
-                    : graph1DataCity2
-                }
-                options={
-                  activeKey && activeKey[0] === "1"
-                    ? graph1Options
-                    : graph1OptionsCity2
-                }
-                height={null}
-              />
-            </div>
-          </Col>
-          <Col span={7}>
-            <div style={{ position: "relative", height: "300px" }}>
-              <Bar
-                data={
-                  activeKey && activeKey[0] === "1"
-                    ? graph2Data
-                    : graph2DataCity2
-                }
-                options={
-                  activeKey && activeKey[0] === "1"
-                    ? graph2Options
-                    : graph2OptionsCity2
-                }
-                heigh={null}
-              />
-            </div>
-          </Col>
-          <Col span={7}>
-            <div style={{ position: "relative", height: "300px" }}>
-              <Bar
-                data={
-                  activeKey && activeKey[0] === "1"
-                    ? graph3Data
-                    : graph3DataCity2
-                }
-                options={
-                  activeKey && activeKey[0] === "1"
-                    ? graph3OptionsCity2
-                    : graph3DataCity2
-                }
-              />
-            </div>
-          </Col>
-        </Row>
-      </div>
+      {activeKey && activeKey[0] ? (
+        <div className="section2">
+          <Row justify={"space-between"}>
+            <Col span={7}>
+              <div style={{ position: "relative", height: "300px" }}>
+                <Bar
+                  data={
+                    activeKey && activeKey[0] === "1"
+                      ? graph1Data
+                      : graph1DataCity2
+                  }
+                  options={
+                    activeKey && activeKey[0] === "1"
+                      ? graph1Options
+                      : graph1OptionsCity2
+                  }
+                  height={null}
+                />
+              </div>
+            </Col>
+            <Col span={7}>
+              <div style={{ position: "relative", height: "300px" }}>
+                <Bar
+                  data={
+                    activeKey && activeKey[0] === "1"
+                      ? graph2Data
+                      : graph2DataCity2
+                  }
+                  options={
+                    activeKey && activeKey[0] === "1"
+                      ? graph2Options
+                      : graph2OptionsCity2
+                  }
+                  heigh={null}
+                />
+              </div>
+            </Col>
+            <Col span={7}>
+              <div style={{ position: "relative", height: "300px" }}>
+                <Bar
+                  data={
+                    activeKey && activeKey[0] === "1"
+                      ? graph3Data
+                      : graph3DataCity2
+                  }
+                  options={
+                    activeKey && activeKey[0] === "1"
+                      ? graph3OptionsCity2
+                      : graph3DataCity2
+                  }
+                />
+              </div>
+            </Col>
+          </Row>
+        </div>
+      ) : null}
     </div>
   );
 };

@@ -32,12 +32,14 @@ ChartJS.register(
 const Section3 = () => {
   return (
     <div className="dashboard section3">
-      <Row>
+      <Row justify={"space-between"}>
         <Col span={13}>
-          <Line data={graph1Data} options={graph1Options} />
+          <div style={{ position: "relative", height: "400px" }}>
+            <Line data={graph1Data} options={graph1Options} />
+          </div>
         </Col>
         <Col span={10}>
-          <div style={{ position: "relative", height: "100%" }}>
+          <div style={{ position: "relative", height: "400px" }}>
             <Line data={graph2Data} options={graph2Options} height={null} />
           </div>
         </Col>

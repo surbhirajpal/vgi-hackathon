@@ -90,19 +90,6 @@ export const ListData = [
             confidence: '86%',
         }
     },
-    {
-        name: 'Grampersdorf',
-        trips: '225',
-        stopTime: '7 mins',
-        delayTime: '5 mins',
-        delayPercentage: '22%',
-        children: {
-            avgPassenger: '3',
-            avgCancellation: '23',
-            avgDelayTime: '25 mins',
-            confidence: '84%',
-        }
-    },
 ];
 
 
@@ -197,19 +184,6 @@ export const ListDataPrediction = [
             avgCancellation: '21',
             avgDelayTime: '23 mins',
             confidence: '88%',
-        }
-    },
-    {
-        name: 'Grampersdorf',
-        trips: '240',
-        stopTime: '8 mins',
-        delayTime: '6 mins',
-        delayPercentage: '24%',
-        children: {
-            avgPassenger: '4',
-            avgCancellation: '26',
-            avgDelayTime: '27 mins',
-            confidence: '86%',
         }
     },
 ];
