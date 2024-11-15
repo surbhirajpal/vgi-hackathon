@@ -16,7 +16,7 @@ const CustomSlider = () => {
   const selectedKey = location.pathname;
 
   return (
-    <Sider collapsible collapsed={collapsed} width={300} className="slider" onCollapse={(value) => setCollapsed(value)}>
+    <Sider collapsible collapsed={collapsed} width={250} className="slider" onCollapse={(value) => setCollapsed(value)}>
       <div className="slider-section">
         {/* <div className="slider-user">
           <div className="slider-user__profile">
